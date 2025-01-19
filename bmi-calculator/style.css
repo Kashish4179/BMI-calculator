@@ -2,30 +2,34 @@
 *{
     font-family: 'Oswald', sans-serif
 }
-body{
+body {
     display: flex;
     justify-content: center;
-    height: 100vh;
-    margin: 0; 
-    background-image: url('bmi-image.jpeg');
-    background-size: cover; 
-    background-position: center; 
+    align-items: center; /* Centers the container vertically */
+    height: 100vh; /* Makes the body fill the entire viewport */
+    margin: 0;
+    background-color: #a0d7a754;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
-
+.clear {
+    clear: both;
+}
 .container {
-  margin-top: 50px;
-  width: 300px;
-  box-shadow: 0px 0px 20px 10px #0044ff;
-  padding: 50px;
-  border-radius:30px;
-  text-align: center;
-  background-color: #ffffff; /* Fallback color */
-  
+    margin-top: 30px;
+    box-shadow: 0px 0px 20px 10px #0044ff;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    max-width: 400px; /* Optional: Sets a max width for better styling */
+    width: 90%; /* Optional: Makes it responsive */
 }
 
 h1{
-    margin-bottom: 40px;
+    margin: 30px 0px;
 }
 
 .gender-container {
@@ -67,22 +71,33 @@ button{
     background-color: #0044ff;
     color:azure;
     font-size: 20px;
-    margin-bottom: 30px;
     margin-top: 30px;
 }
 input{
     border: none;
     border-bottom: 1px solid #0044ff;
     width: 50%;
-    margin-bottom: 20px;
     outline: none;
     padding: 10px;
     text-align: center;
     font-size: 25px;
+    margin: 0px;
 }
 
-#result{
+.result{
     
     font-size: 25px;
+    padding: 20px;
 
 }
+
+@media screen and (max-width:1500px) {
+    h1 {
+        margin: 20px 0px;
+    }
+    .container {
+        padding: 35px;
+    }
+}
+
+
